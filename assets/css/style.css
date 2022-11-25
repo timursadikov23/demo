@@ -891,12 +891,12 @@ animation: float 9s ease-out infinite;
   }
   .grid-extra-list {
     display: grid;
-    grid-template-rows: 499px 0px !important;
+    grid-template-rows: 525px 0px !important;
 }
 .grid-list {
-  display: grid;
-  gap: 0px;
-  grid-template-rows: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
   .service-card{
@@ -928,7 +928,12 @@ animation: float 9s ease-out infinite;
  @media (min-width: 425px) {
   .grid-extra-list{
     display: grid;
-    grid-template-rows: 447px 0px !important;
+    grid-template-rows: 462px 0px !important;
+  }
+  .grid-list{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
   }
   
  }
@@ -966,6 +971,7 @@ animation: float 9s ease-out infinite;
   }
 
   .grid-list{
+    display: grid;
     grid-template-rows: 350px 350px;
   }
 
@@ -1068,9 +1074,9 @@ animation: float 9s ease-out infinite;
 
   .btn { height: 60px; }
 
-  .grid-list { grid-template-columns: 1fr 1fr;
-    gap: 30px; 
-    grid-template-rows: 421px 421px;
+  .grid-list { 
+    display: flex;
+    
    }
    .grid-list-product { grid-template-columns: 1fr 1fr;
     
@@ -1078,7 +1084,8 @@ animation: float 9s ease-out infinite;
 
    .grid-extra-list {
     display: grid;
-    grid-template-rows: 440px 0px !important;
+    grid-template-rows: 420px 0px !important;
+    
 }
     .service-card {
       margin-bottom: 0px !important;
@@ -1260,11 +1267,15 @@ animation: float 9s ease-out infinite;
 
   .btn { height: 70px; }
 
-  .grid-list  { grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: 480px 350px;}
+  .grid-list  { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    grid-template-rows: 510px 460px;
+  }
   .grid-extra-list {
       display: grid;
-      grid-template-rows: 480px 0px !important;
+      grid-template-rows: 520px 0px !important;
     }
 
     .grid-list-product {
@@ -1538,7 +1549,7 @@ animation: float 9s ease-out infinite;
    */
 
   .service .grid-list { grid-template-columns: repeat(3, 2fr); 
-    grid-template-rows: 420px 350px;}
+    grid-template-rows: 510px 350px;}
 
   .service-card .h3 { --fs-3: 2rem; }
    
